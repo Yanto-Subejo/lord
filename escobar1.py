@@ -19,7 +19,7 @@ try:
 except ImportError:
 	catet_req = ('# • sedang menginstall modul requests •')
 	requ = rich.markdown.Markdown(catet_req, style='green')
-	rich.console.Console().print(requ)
+	rich.console.Console().print
 	os.system('pip install requests')
 try:
 	import concurrent.futures
