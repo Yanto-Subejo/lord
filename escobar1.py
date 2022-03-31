@@ -26,7 +26,7 @@ try:
 except ImportError:
 	catet_futur = ('# • sedang menginstall modul futures •')
 	ft = rich.markdown.Markdown(catet_futur, style='green')
-	rich.console.Console().print(ft)
+	rich.console.Console().print
 	os.system('pip install futures')
 try:
 	import bs4
