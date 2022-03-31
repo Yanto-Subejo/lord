@@ -19,14 +19,14 @@ try:
 except ImportError:
 	catet_req = ('# • sedang menginstall modul requests •')
 	requ = rich.markdown.Markdown(catet_req, style='green')
-	rich.console.Console().print
+	rich.console.Console().print(requ)
 	os.system('pip install requests')
 try:
 	import concurrent.futures
 except ImportError:
 	catet_futur = ('# • sedang menginstall modul futures •')
 	ft = rich.markdown.Markdown(catet_futur, style='green')
-	rich.console.Console().print
+	rich.console.Console().print(ft)
 	os.system('pip install futures')
 try:
 	import bs4
